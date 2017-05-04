@@ -70,9 +70,10 @@ section {
         } 
     }
     .about_me_photo{
-        height: 75%;
+        height: 100%;
         width: 45%;
-        background-image: url("../images/stadion.jpg");
+        background-image: url("../images/paseczki.png");
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
