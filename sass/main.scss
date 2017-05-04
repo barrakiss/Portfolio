@@ -1,3 +1,66 @@
 @import 'reset';
 @import 'colors';
 
+$phone: "(max-width: 767px)"; 
+$tablet: "(min-width: 768px) and (max-width: 1023px)"; 
+$desktop: "(min-width: 1024px)"; 
+
+header {
+    background-image: url("../images/horizontal.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: map-get($colors, bee); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spark {
+    height: 300px;
+    width: 300px;
+    border: 4px solid;
+    transform: rotate(45deg);
+}
+
+.opacity_spark {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    div{
+        height: 40px;
+        width: 200px;
+        h1, p{ 
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        color: map-get($colors, hulk);
+        background-image: none;
+        background-color: black;
+    }
+    .spark {
+    height: 225px;
+    width: 225px;
+    }
+}
+
+// .row {
+//   clear: both;
+//   display: block;
+//   content: "";
+// }
+
+/*@media screen and (min-width: 1025px) {
+    .image {
+
+    }
+}*/
