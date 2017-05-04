@@ -1,9 +1,9 @@
 @import 'reset';
 @import 'colors';
 
-$phone: "(max-width: 767px)"; 
-$tablet: "(min-width: 768px) and (max-width: 1023px)"; 
-$desktop: "(min-width: 1024px)"; 
+// $phone: "(max-width: 767px)"; 
+// $tablet: "(min-width: 768px) and (max-width: 1023px)"; 
+// $desktop: "(min-width: 1024px)"; 
 
 header {
     background-image: url("../images/horizontal.jpg");
@@ -41,11 +41,48 @@ header {
     }
 }
 
+section {
+    height: 100vh;
+    width: 100vw;
+    color: map-get($colors, black);
+    background-color: map-get($colors, bee);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .about_me_text{
+        height: 75%;
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2 {
+            padding: 25px;
+        }
+        p {
+            line-height: 25px;
+            padding: 0 50px 0 0;
+            text-align: center;
+            span {
+                font-weight: bold;                
+            }
+        } 
+    }
+    .about_me_photo{
+        height: 75%;
+        width: 45%;
+        background-image: url("../images/stadion.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+ 
 @media screen and (max-width: 767px) {
     header {
         color: map-get($colors, hulk);
         background-image: none;
-        background-color: black;
+        background-color: map-get($colors, bee);
     }
     .spark {
     height: 225px;
