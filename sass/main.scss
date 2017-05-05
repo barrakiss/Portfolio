@@ -92,7 +92,7 @@ header {
     
     .hobby {
         width: 50%;
-        padding: 0 0 0 20px;
+        padding: 0 0 0 80px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -156,7 +156,7 @@ header {
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
-            margin: 10px;
+            margin: 10px; 
         }
         .image1 {
             background-image: map-get($icons, html);    
@@ -187,7 +187,44 @@ header {
         }
     }
 }
- 
+
+.section4 {
+    height: 60vh;
+    background-color: map-get($colors, greey_hulk); 
+    color: map-get($colors, bee);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .my_work {
+        height: 10%;
+    }
+    .my_work_div {
+        height: 70%;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        .work1, .work2, .work3 {
+            width: 300px;
+            height: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .work1{
+            background-image: map-get($icons, work);
+        }
+        .work2{
+            background-image: map-get($icons, work);
+        }
+        .work3{
+            background-image: map-get($icons, work);
+    }
+}
+}
+
 @media screen and (max-width: 767px) {
     header {
         color: map-get($colors, hulk);
