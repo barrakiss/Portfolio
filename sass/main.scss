@@ -3,10 +3,6 @@
 @import 'font-awesome';
 @import 'images';
 
-// $phone: "(max-width: 767px)"; 
-// $tablet: "(min-width: 768px) and (max-width: 1023px)"; 
-// $desktop: "(min-width: 1024px)"; 
-
 header {
     background-image: map-get($icons, horizontal);
     background-position: center;
@@ -28,8 +24,8 @@ header {
 
 .opacity_spark {
     position: absolute;
-    height: 300px;
-    width: 300px;
+    height: 10vh;
+    width: 10vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,16 +41,15 @@ header {
 
 .section1 { 
     height: 100vh;
-    width: 100%;
     color: map-get($colors, black);
     background-color: map-get($colors, bee);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    .about_me_text{
-        height: 75%;
-        width: 45%;
+    .about_me_text{         
+        height: 75vh;
+        width: 45vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -71,9 +66,9 @@ header {
             }
         } 
     }
-    .about_me_photo{
-        height: 100%; 
-        width: 45%;
+    .about_me_photo{            
+        height: 75vh; 
+        width: 45vw;
         background-image: map-get($icons, paseczki);
         background-position: center;
         background-repeat: no-repeat;
@@ -83,26 +78,23 @@ header {
 
 .section2 {
     height: 100vh;
-    width: 100%;
     background-color: map-get($colors, greey_hulk);
     color: map-get($colors, bee);
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     
     .hobby {
-        width: 50%;
-        padding: 0 0 0 80px;
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 45%;
-        height: 90%;
+        width: 45vw;
+        height: 80vh;
         h1 {
         text-align: center;
         padding: 0 0 100px 0;
-        height: 10%;
+        height: 9vh;
         }
         p {
             padding: 0 0 30px 0;
@@ -110,16 +102,16 @@ header {
         }
         
     }
-    .gallery {
-        height: 100%;
-        width: 50%;
+    .gallery {      
+        height: 80vh;
+        width: 45vw;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        .photos {
-            width: 80%;
-            height: 70%;
+        .photos {        
+            width: 40vw;
+            height: 70vh;
             background-image: map-get($icons, bungee);
             background-repeat: no-repeat;
             background-size: cover;
@@ -145,18 +137,21 @@ header {
     color: map-get($colors, greey_hulk);
     .technology_div {
         padding: 0 0 100px 0;
-        height: 10%;
+        height: 9vh;
     }
     .technology_logo{
-        height: 40%;
-        li {
-            height: 120px;
-            width: 120px;
+        height: 18vh;
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {           
+            height: 12vh;
+            width: 9vw;
             display: inline-block;
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
-            margin: 10px; 
         }
         .image1 {
             background-image: map-get($icons, html);    
@@ -197,19 +192,19 @@ header {
     justify-content: center;
     align-items: center;
     .my_work {
-        height: 10%;
+        height: 9vh;
     }
     .my_work_div {
-        height: 70%;
-        width: 80%;
+        height: 40vh;
+        width: 90vw;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         justify-content: space-around;
         .work1, .work2, .work3 {
-            width: 300px;
-            height: 300px;
+            height: 32vh;
+            width: 32vh;
             background-position: center;
             background-repeat: no-repeat;
         }
@@ -234,9 +229,8 @@ header {
     justify-content: center;
     align-items: center;
     .container {
-        width: 90%;
-        height: 80%;
-        // border: 1px solid red;
+        width: 90vw;
+        height: 70vh;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -244,12 +238,11 @@ header {
         justify-content: space-around;
         .contact_foto {
             background-image: map-get($icons, stundUp);
-            // border: 1px solid red;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            width: 45%;
-            height: 90%;
+            width: 40vw;
+            height: 60vh;
         }
         .contact_div {
             h1 {
@@ -263,8 +256,8 @@ header {
                 color: black;                    
                 }
             }
-            width: 45%;
-            height: 90%;
+            width: 40vw;
+            height: 60vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
