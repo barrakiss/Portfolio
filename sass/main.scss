@@ -1,13 +1,14 @@
 @import 'reset';
 @import 'colors';
 @import 'font-awesome';
+@import 'images';
 
 // $phone: "(max-width: 767px)"; 
 // $tablet: "(min-width: 768px) and (max-width: 1023px)"; 
 // $desktop: "(min-width: 1024px)"; 
 
 header {
-    background-image: url("../images/horizontal.jpg");
+    background-image: map-get($icons, horizontal);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,7 +74,7 @@ header {
     .about_me_photo{
         height: 100%; 
         width: 45%;
-        background-image: url("../images/paseczki.png");
+        background-image: map-get($icons, paseczki);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -112,7 +113,6 @@ header {
     .gallery {
         height: 100%;
         width: 50%;
-        // background-color: black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -120,7 +120,7 @@ header {
         .photos {
             width: 80%;
             height: 70%;
-            background-image: url("../images/bungee.jpg");
+            background-image: map-get($icons, bungee);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -131,6 +131,59 @@ header {
             div {
                 margin: 20px;
             }
+        }
+    }
+}
+
+.section3 {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($colors, bee);
+    color: map-get($colors, greey_hulk);
+    .technology_div {
+        padding: 0 0 100px 0;
+        height: 10%;
+    }
+    .technology_logo{
+        height: 40%;
+        li {
+            height: 120px;
+            width: 120px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            margin: 10px;
+        }
+        .image1 {
+            background-image: map-get($icons, html);    
+        }
+        .image2 {
+            background-image: map-get($icons, css);
+        }
+        .image3 {
+            background-image: map-get($icons, javascript);
+        }
+        .image4 {
+            background-image: map-get($icons, jquery);
+        }
+        .image5 {
+            background-image: map-get($icons, js6);
+        }
+        .image6 {
+            background-image: map-get($icons, react);
+        }
+        .image7 {
+            background-image: map-get($icons, rwd);
+        }
+        .image8 {
+            background-image: map-get($icons, sass);
+        }
+        .image9 {
+            background-image: map-get($icons, git);
         }
     }
 }
