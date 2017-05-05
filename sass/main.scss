@@ -41,9 +41,9 @@ header {
     }
 }
 
-section {
+.section1 { 
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     color: map-get($colors, black);
     background-color: map-get($colors, bee);
     display: flex;
@@ -57,7 +57,7 @@ section {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        h2 {
+        h1 {
             padding: 25px;
         }
         p {
@@ -76,6 +76,53 @@ section {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+}
+
+.section2 {
+    height: 100vh;
+    width: 100%;
+    background-color: map-get($colors, greey_hulk);
+    color: map-get($colors, bee);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    .hobby {
+        width: 50%;
+        padding: 0 0 0 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 45%;
+        height: 90%;
+        h1 {
+        text-align: center;
+        padding: 0 0 100px 0;
+        height: 10%;
+        }
+        p {
+            padding: 0 0 30px 0;
+            line-height: 25px;
+        }
+        
+    }
+    .gallery {
+        height: 100%;
+        width: 50%;
+        // background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .photos {
+            width: 80%;
+            height: 70%;
+            background-image: url("../images/bungee.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
     }
 }
  
