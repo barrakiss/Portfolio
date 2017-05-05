@@ -221,21 +221,85 @@ header {
         }
         .work3{
             background-image: map-get($icons, work);
+        }
     }
 }
+ 
+.section5 {
+    height: 80vh;
+    background-color: map-get($colors, bee); 
+    color: map-get($colors, greey_hulk);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .container {
+        width: 90%;
+        height: 80%;
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        .contact_foto {
+            background-image: map-get($icons, stundUp);
+            // border: 1px solid red;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 45%;
+            height: 90%;
+        }
+        .contact_div {
+            h1 {
+                margin: 0 0 80px 0;
+            }
+            p{
+                padding: 15px 0;
+                color: black;
+                a {
+                text-decoration: none;
+                color: black;                    
+                }
+            }
+            width: 45%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
-@media screen and (max-width: 767px) {
-    header {
-        color: map-get($colors, hulk);
-        background-image: none;
-        background-color: map-get($colors, bee);
-    }
-    .spark {
-    height: 225px;
-    width: 225px;
+footer {
+    height: 20vh;
+    background-color: map-get($colors, greey_hulk);
+    color: map-get($colors, bee);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    .fafa_div {
+        i {
+            padding: 0 20px;
+        }
     }
 }
+
+// @media screen and (max-width: 767px) {
+//     header {
+//         color: map-get($colors, hulk);
+//         background-image: none;
+//         background-color: map-get($colors, bee);
+//     }
+//     .spark {
+//     height: 225px;
+//     width: 225px;
+//     }
+// }
 
 // .row {
 //   clear: both;
