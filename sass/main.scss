@@ -1,6 +1,6 @@
 @import 'reset';
 @import 'colors';
-@import 'font-awesome';
+@import 'fontawesome/font-awesome'; 
 @import 'images';
 
 header {
@@ -250,10 +250,8 @@ header {
             }
             p{
                 padding: 15px 0;
-                color: black;
                 a {
                 text-decoration: none;
-                color: black;                    
                 }
             }
             width: 40vw;
