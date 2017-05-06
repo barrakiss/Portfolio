@@ -136,7 +136,6 @@ header {
     background-color: map-get($colors, bee);
     color: map-get($colors, greey_hulk);
     .technology_div {
-        padding: 0 0 100px 0;
         height: 9vh;
     }
     .technology_logo{
@@ -281,17 +280,36 @@ footer {
     }
 }
 
-// @media screen and (max-width: 767px) {
-//     header {
-//         color: map-get($colors, hulk);
-//         background-image: none;
-//         background-color: map-get($colors, bee);
-//     }
-//     .spark {
-//     height: 225px;
-//     width: 225px;
-//     }
-// }
+@media screen and (max-width: 767px) {
+    header {
+        color: map-get($colors, bee);
+        background-image: none;
+        background-color: map-get($colors, greey_hulk);
+    }
+    .spark {
+    height:35vh;
+    width:35vh;
+    }
+    .section3 {
+        height: 100%;
+    .technology_div {
+        font-size: 5vw;
+        height: 10%;
+        margin-top: 20px;
+    }
+    .technology_logo{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        li {
+            display: flex;
+            flex-direction: column;
+            height: 25vh;
+            width: 25vw;
+            }
+        }
+    }
+}
 
 // .row {
 //   clear: both;
