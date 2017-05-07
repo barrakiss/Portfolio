@@ -1,20 +1,38 @@
-.spark {
-    animation-name: rotate_animeation;
+.right {
+    animation-name: animeation_right;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+}
+.left {
+    animation-name: animeation_left;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: 1;
 }
 
-@keyframes rotate_animeation {
+@keyframes animeation_right {
     0% {
-        opacity: 0;                 
-    } 
-    50% {
-        opacity: 0;         
-        transform: rotate(-90deg);        
+        left: 40vw;
+        opacity: 0;
+        transform: scale(2);                    
     }
     100% {
         opacity: 1;
+        left: 0vw; 
+    }
+}
+
+@keyframes animeation_left {
+    0% {
+        right: 40vw;
+        opacity: 0;
+        transform: scale(2);                    
+    }
+    100% {
+        opacity: 1;
+        right: 0vw; 
     }
 }

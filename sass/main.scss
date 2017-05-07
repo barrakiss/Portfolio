@@ -141,7 +141,11 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        li {           
+        .hide {
+        display: none;
+    }
+        li {  
+            position: relative;         
             height: 12vh;
             width: 9vw;
             display: inline-block;
