@@ -59,7 +59,7 @@ header {
         }
         p {
             font-family: 'Quattrocento';
-            line-height: 25px;
+            line-height: 3vh;
             text-align: center;
             span {
                 font-family: 'Quattrocento';
@@ -98,7 +98,6 @@ header {
         }
         p {
             font-family: 'Quattrocento';
-            padding: 0 0 3vh 0;
             line-height: 3vh;
         }
         
@@ -118,13 +117,6 @@ header {
             background-size: cover;
             background-position: center;
         }
-        // .buttons {
-        //     display: flex;
-        //     flex-direction: row;
-        //     div {
-        //         margin: 20px;
-        //     }
-        // }
     }
 }
 
@@ -226,15 +218,12 @@ header {
     background-color: map-get($colors, bee); 
     color: map-get($colors, greey_hulk);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     .container {
         width: 90vw;
         height: 70vh;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
         align-items: center;
         justify-content: space-around;
         .contact_foto {
@@ -247,12 +236,11 @@ header {
         }
         .contact_div {
             p{
-                margin: 1vh 0;
+                margin: 0.5% 0;
                 &:last-child {
+                    margin: 2vh 0;
                     border: 1px solid;
                     padding: 1.2vh;
-                    text-align: center;
-                    text-justify: center;
                 }
                 a {
                 text-decoration: none;
@@ -260,13 +248,13 @@ header {
                 }
             }
             width: 40vw;
-            height: 60vh;
+            height: 100%; 
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             .contact_div2 {
-                margin: 0 0 2vh 0;
+                margin: 0 0 5vh 0;
             }
         }
     }
@@ -281,11 +269,6 @@ footer {
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    // .fafa_div {
-    //     i {
-    //         padding: 0 20px;
-    //     }
-    // }
 }
 
 @media screen and (max-width: 767px) {
@@ -302,14 +285,18 @@ footer {
     background-size: cover;    
     }
     .section1 {
-        height: 100%;
         .about_me_text{
             margin: 15vh 0;
             height: 100%;
             width: 80%;
-            font-size: 3vh;
+            font-size: 2vh;
             h1{
                 font-size: 5vh;
+                margin: 3vh 0 2vh 0;                
+            }
+            p {
+                text-align: justify; 
+                margin: 2vh 0;           
             }
         }
         .about_me_photo {
@@ -320,10 +307,14 @@ footer {
         .hobby {
             height: 100%;
             width: 80%;
-            font-size: 3vh;
+            font-size: 2vh;
+            text-align: justify;
             h1 {
                 font-size: 5vh;
-                margin: 3vh 0 2vh 0;
+                margin: 2vh 0 2vh 0;
+            }
+            p {
+                margin: 2vh 0;
             }
         }
         .gallery {
