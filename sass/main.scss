@@ -2,6 +2,7 @@
 @import 'colors';
 @import 'fontawesome/font-awesome'; 
 @import 'images';
+@import 'animation';
 
 header {
     background-image: map-get($icons, horizontal);
@@ -313,7 +314,7 @@ footer {
             height: 100%;
             width: 80%;
             font-size: 2vh;
-            text-align: justify;
+            text-align: justify;                        
             h1 {
                 font-size: 5vh;
                 margin: 2vh 0 2vh 0;
