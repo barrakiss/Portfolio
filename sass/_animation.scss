@@ -1,4 +1,4 @@
-.spark, h1, p {
+.spark {
     animation-name: rotate_animeation;
     animation-duration: 2s;
     animation-timing-function: linear;
@@ -9,7 +9,7 @@
 @keyframes rotate_animeation {
     0% {
         opacity: 0;                 
-    }
+    } 
     50% {
         opacity: 0;         
         transform: rotate(-90deg);        

@@ -1,5 +1,5 @@
 module.exports = {
-  entry: ["./js/app.jsx"],
+  entry: ["./js/script.js"],
   output: {filename: "./js/out.js"},
   devServer: {
     inline: true,
@@ -10,7 +10,7 @@ module.exports = {
   module: {
     loaders:[
       {
-        test: /\.jsx$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader",
         query: {
