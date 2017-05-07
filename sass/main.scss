@@ -55,11 +55,10 @@ header {
         align-items: center;
         flex-direction: column;
         h1 {
-            padding: 25px;
+            height: 7vh;
         }
         p {
             line-height: 25px;
-            padding: 0 50px 0 0;
             text-align: center;
             span {
                 font-weight: bold;                
@@ -93,12 +92,11 @@ header {
         height: 80vh;
         h1 {
         text-align: center;
-        padding: 0 0 100px 0;
         height: 9vh;
         }
         p {
-            padding: 0 0 30px 0;
-            line-height: 25px;
+            padding: 0 0 3vh 0;
+            line-height: 3vh;
         }
         
     }
@@ -117,13 +115,13 @@ header {
             background-size: cover;
             background-position: center;
         }
-        .buttons {
-            display: flex;
-            flex-direction: row;
-            div {
-                margin: 20px;
-            }
-        }
+        // .buttons {
+        //     display: flex;
+        //     flex-direction: row;
+        //     div {
+        //         margin: 20px;
+        //     }
+        // }
     }
 }
 
@@ -212,6 +210,7 @@ header {
         }
         .work2{
             background-image: map-get($icons, work);
+            margin: 0 3vh;
         }
         .work3{
             background-image: map-get($icons, work);
@@ -244,14 +243,17 @@ header {
             height: 60vh;
         }
         .contact_div {
-            h1 {
-                margin: 0 0 80px 0;
-            }
             p{
-                padding: 15px 0;
+                margin: 1vh 0;
+                &:last-child {
+                    border: 1px solid;
+                    padding: 1.2vh;
+                    text-align: center;
+                    text-justify: center;
+                }
                 a {
                 text-decoration: none;
-                color: map-get($colors, greey_hulk);                
+                color: map-get($colors, greey_hulk);              
                 }
             }
             width: 40vw;
@@ -260,12 +262,15 @@ header {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            .contact_div2 {
+                margin: 0 0 2vh 0;
+            }
         }
     }
 }
 
 footer {
-    height: 20vh;
+    height: 5vh;
     background-color: map-get($colors, greey_hulk);
     color: map-get($colors, bee);
     display: flex;
@@ -273,11 +278,11 @@ footer {
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    .fafa_div {
-        i {
-            padding: 0 20px;
-        }
-    }
+    // .fafa_div {
+    //     i {
+    //         padding: 0 20px;
+    //     }
+    // }
 }
 
 @media screen and (max-width: 767px) {
@@ -289,30 +294,89 @@ footer {
     .spark {
     height:35vh;
     width:35vh;
+    background-image: map-get($icons, horizontal);
+    background-position: center;
+    background-size: cover;    
+    }
+    .section1 {
+        height: 100%;
+        .about_me_text{
+            margin: 15vh 0;
+            height: 100%;
+            width: 80%;
+            font-size: 3vh;
+            h1{
+                font-size: 5vh;
+            }
+        }
+        .about_me_photo {
+            display: none;
+        }
+    }
+    .section2 {
+        .hobby {
+            height: 100%;
+            width: 80%;
+            font-size: 3vh;
+            h1 {
+                font-size: 5vh;
+                margin: 3vh 0 2vh 0;
+            }
+        }
+        .gallery {
+            display: none;
+        }
     }
     .section3 {
         height: 100%;
     .technology_div {
         font-size: 5vw;
         height: 10%;
-        margin-top: 20px;
+        margin: 7vh 0;
     }
     .technology_logo{
         height: 90%;
-        display: flex;
         flex-direction: column;
         li {
             display: flex;
             flex-direction: column;
             height: 25vh;
-            width: 25vw;
+            width: 40vw;
+            margin: 3vh 0;
+            &:first-child{
+                margin-top: 1vh;
+            }
+            &:last-child {
+                margin-bottom: 8vh;
+                }
             }
         }
     }
+    .section4 {
+    height: 100%;
+    .my_work {
+        font-size: 5vw;
+        height: 10%;
+        margin: 9vh 0;
+    }
+    .my_work_div {
+        height: 90%;
+        flex-direction: column;
+        div{
+            &:last-child{
+                margin-bottom: 4vh;
+            }
+        }
+        .work1, .work2, .work3 {
+            margin: 2vh 0;
+            height: 35vh;
+            width: 35vh;
+            }
+        }
+    }
+    .section5 {
+        .contact_foto {
+            display: none;
+        }   
+    }
 }
-
-// .row {
-//   clear: both;
-//   display: block;
-//   content: "";
-// }
