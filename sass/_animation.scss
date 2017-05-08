@@ -53,36 +53,20 @@
         opacity: 1;
     }
 }
-// SECTION1 ANIMATION
-.animation_s1_1 {
-    animation-name: animation_s1_1;
+// ANIMATION FORM BOTTOM
+.from_bottom {
+    animation-name: animation_bottom;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-iteration-count: 1;
 }
-    @keyframes animation_s1_1 {
+    @keyframes animation_bottom {
     0% {
         opacity: 0;
-        transform: translate(40vw);              
+        transform: translate(0, 40vw);              
     }
     100% {
-        opacity: 1;
-    }
-}
-.animation_s1_2 {
-    animation-name: animation_s1_2;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
-    animation-iteration-count: 1;
-}
-    @keyframes animation_s1_2 {
-    0% {
-        opacity: 0;
-        transform: translate(-40vw);              
-    }
-    100% {
-        opacity: 1;
+        opacity: 1; 
     }
 }

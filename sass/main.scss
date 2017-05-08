@@ -125,7 +125,6 @@ header {
     .black_whole_2 {
     position: relative;
     top: 40vh;
-    border: 1px solid red;
     }
 }
 
@@ -218,6 +217,9 @@ header {
             background-position: center;
             background-repeat: no-repeat;
         }
+        .hide {
+        display: none;
+    }
         .work1{
             background-image: map-get($icons, work);
         }
