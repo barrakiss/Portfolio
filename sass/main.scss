@@ -122,6 +122,11 @@ header {
     .hide {
         display: none;
     }
+    .black_whole_2 {
+    position: relative;
+    top: 40vh;
+    border: 1px solid red;
+    }
 }
 
 .section3 {
@@ -330,7 +335,7 @@ footer {
                 margin: 2vh 0;
             }
         }
-        .gallery {
+        .photos {
             display: none;
         }
     }
