@@ -29,7 +29,7 @@ $(window).scroll(function() {
     if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
          $('.photos').removeClass('hide').addClass('left');
     }
-// ANIMATION SECTION2
+// ANIMATION SECTION4
     var top_of_element = $(".section5").offset().top;
     var bottom_of_element = $(".section5").offset().top + $(".section5").outerHeight();
     if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
@@ -40,6 +40,18 @@ $(window).scroll(function() {
     }
     if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
          $('.work2').removeClass('hide').addClass('from_bottom');
+    }
+// ANIMATION SECTION5
+    var top_of_element = $(".black_whole_3").offset().top;
+    var bottom_of_element = $(".black_whole_3").offset().top + $(".black_whole_3").outerHeight();
+    if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+         $('.contact_foto').removeClass('hide').addClass('from_bottom');
+    }
+    if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+         $('.contact_div2, .con2, .con4, .download').removeClass('hide').addClass('left');
+    }
+    if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+         $('.con1, .con3, .con5').removeClass('hide').addClass('right');
     }
     else {
         // The element is not visible, do something else

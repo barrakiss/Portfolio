@@ -156,10 +156,9 @@ header {
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
-            transition: 2s;
             &:hover {
-                transform: rotate(360deg);
                 transform: scale(1.5);
+                transition: 2s;                
             }
         }
         .image1 {
@@ -216,10 +215,11 @@ header {
             width: 32vh;
             background-position: center;
             background-repeat: no-repeat;
+            &:hover {
+            transition: 2s;                
+            transform: scale(1.5);  
+            }
         }
-        .hide {
-        display: none;
-    }
         .work1{
             background-image: map-get($icons, work);
         }
@@ -257,16 +257,20 @@ header {
         .contact_div {
             p{
                 margin: 0.5% 0;
-                &:last-child {
-                    margin: 2vh 0;
-                    border: 1px solid;
-                    padding: 1.2vh;
-                }
                 a {
                 text-decoration: none;
                 color: map-get($colors, greey_hulk);              
                 }
+                &:hover {
+                transform: scale(1.5);
+                transition: 2s;                
+                }
             }
+            .download {
+                    margin: 2vh 0;
+                    border: 1px solid;
+                    padding: 1.2vh;
+                }
             width: 40vw;
             height: 100%; 
             display: flex;
@@ -276,6 +280,10 @@ header {
             .contact_div2 {
                 margin: 0 0 5vh 0;
             }
+        }
+        .black_whole_3 {
+        position: relative;
+        bottom: 10vh;
         }
     }
 }
@@ -290,6 +298,9 @@ footer {
     align-items: center;
     justify-content: space-around;
 }
+.hide {
+    display: none;
+    }
 
 @media screen and (max-width: 767px) {
     header {
