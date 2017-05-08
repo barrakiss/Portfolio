@@ -1,38 +1,88 @@
-.right {
-    animation-name: animeation_right;
+// HEADER ANIMATION
+.spark, .opacity_spark {
+    animation-name: animation_spark;
     animation-duration: 2s;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+}
+    @keyframes animation_spark {
+    0% {
+        opacity: 0;
+        transform: scale(2);                   
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+// TECHNOLOGY ANIMATION
+.right {
+    animation-name: animation_right;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-iteration-count: 1;
 }
 .left {
-    animation-name: animeation_left;
+    animation-name: animation_left;
     animation-duration: 2s;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-iteration-count: 1;
 }
 
-@keyframes animeation_right {
+@keyframes animation_right {
     0% {
-        left: 40vw;
         opacity: 0;
-        transform: scale(2);                    
+        transform: scale(1.5) translate(40vw);         
     }
     100% {
         opacity: 1;
-        left: 0vw; 
     }
 }
 
-@keyframes animeation_left {
+@keyframes animation_left {
     0% {
-        right: 40vw;
         opacity: 0;
-        transform: scale(2);                    
+        transform: scale(1.5) translate(-40vw); 
     }
     100% {
         opacity: 1;
-        right: 0vw; 
+    }
+}
+// SECTION1 ANIMATION
+.animation_s1_1 {
+    animation-name: animation_s1_1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+}
+    @keyframes animation_s1_1 {
+    0% {
+        opacity: 0;
+        transform: translate(40vw);              
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.animation_s1_2 {
+    animation-name: animation_s1_2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+}
+    @keyframes animation_s1_2 {
+    0% {
+        opacity: 0;
+        transform: translate(-40vw);              
+    }
+    100% {
+        opacity: 1;
     }
 }
