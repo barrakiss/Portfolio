@@ -1,8 +1,4 @@
-@import 'reset';
-@import 'colors';
-@import 'fontawesome/font-awesome'; 
-@import 'images';
-@import 'animation';
+@import 'all';
 
 header {
     background-image: map-get($icons, horizontal);
@@ -51,6 +47,7 @@ header {
         height: 40px;
         width: 200px;
         h1, p{ 
+            font-family: 'Ubuntu';
             text-align: center;
         }
     }
@@ -93,11 +90,11 @@ header {
             height: 7vh;
         }
         p {
-            font-family: 'Quattrocento';
+            font-family: 'Ubuntu';
             line-height: 3vh;
             text-align: center;
             span {
-                font-family: 'Quattrocento';
+                font-family: 'Ubuntu';
                 font-weight: bold;             
             }
         }
@@ -152,7 +149,7 @@ header {
         height: 9vh;
         }
         p {
-            font-family: 'Quattrocento';
+            font-family: 'Ubuntu';
             line-height: 3vh;
         }
         
@@ -160,9 +157,9 @@ header {
     .photos {        
         width: 45vw;
         height: 70vh;
-        background-image: map-get($icons, bungee);
+        background-image: map-get($icons, downhill);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
     }
     .hide {
