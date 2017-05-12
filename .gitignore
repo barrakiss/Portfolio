@@ -1,10 +1,10 @@
 .idea
 *.*~
+.gitignore
 node_modules
 sass
 jquery-3.2.0.min.js
 script.js
-.gitignore
 gulpfile.js
 webpack.config.js
 fonts
