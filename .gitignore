@@ -3,7 +3,6 @@
 .gitignore
 node_modules
 sass
-jquery-3.2.0.min.js
 script.js
 gulpfile.js
 webpack.config.js
