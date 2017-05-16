@@ -1,0 +1,143 @@
+/* HEADER ANIMATION*/
+.spark, .opacity_spark {
+    -webkit-animation-name: animation_spark;
+            animation-name: animation_spark;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+    @-webkit-keyframes animation_spark {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(2);
+                transform: scale(2);                   
+    }
+    50% {
+        -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+    @keyframes animation_spark {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(2);
+                transform: scale(2);                   
+    }
+    50% {
+        -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* TECHNOLOGY ANIMATION*/
+.right {
+    -webkit-animation-name: animation_right;
+            animation-name: animation_right;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+.left {
+    -webkit-animation-name: animation_left;
+            animation-name: animation_left;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+
+@-webkit-keyframes animation_right {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.5) translate(40vw);
+                transform: scale(1.5) translate(40vw);         
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animation_right {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.5) translate(40vw);
+                transform: scale(1.5) translate(40vw);         
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes animation_left {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.5) translate(-40vw);
+                transform: scale(1.5) translate(-40vw); 
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animation_left {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.5) translate(-40vw);
+                transform: scale(1.5) translate(-40vw); 
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* ANIMATION FORM BOTTOM*/
+.from_bottom {
+    -webkit-animation-name: animation_bottom;
+            animation-name: animation_bottom;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+    @-webkit-keyframes animation_bottom {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0, 40vw);
+                transform: translate(0, 40vw);              
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+    @keyframes animation_bottom {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0, 40vw);
+                transform: translate(0, 40vw);              
+    }
+    100% {
+        opacity: 1; 
+    }
+}
