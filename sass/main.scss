@@ -56,7 +56,7 @@ header {
 
 .section1 { 
     height: 100vh;
-    color: map-get($colors, black);
+    color: map-get($colors, gray_hulk);
     background-color: map-get($colors, bee);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -320,7 +320,7 @@ header {
         .opacity_work1, .opacity_work2, .opacity_work3 {
             height: 30%;
             width: 100%;
-            background-color: map-get($colors, black);
+            background-color: map-get($colors, dark);
             margin-top: 18vh;
             display: flex;
             justify-content: center;
