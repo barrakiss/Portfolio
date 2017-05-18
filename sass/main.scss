@@ -120,7 +120,7 @@ header {
 
 .section2 {
     height: 100vh;
-    background-color: map-get($colors, greey_hulk);
+    background-color: map-get($colors, gray_hulk);
     color: map-get($colors, bee);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -191,7 +191,7 @@ header {
         -ms-flex-align: center;
             align-items: center;
     background-color: map-get($colors, bee);
-    color: map-get($colors, greey_hulk);
+    color: map-get($colors, gray_hulk);
     .technology_div {
         height: 9vh;
     }
@@ -219,10 +219,10 @@ header {
             background-size: contain;
             background-position: center;
             &:hover {
-                -webkit-transform: scale(1.5);
-                        transform: scale(1.5);
-                -webkit-transition: 2s;
-                transition: 2s;                
+                -webkit-transform: scale(1.3);
+                        transform: scale(1.3);
+                -webkit-transition: 1s;
+                transition: 1s;                
             }
         }
         .image1 {
@@ -257,7 +257,7 @@ header {
 
 .section4 {
     height: 60vh;
-    background-color: map-get($colors, greey_hulk); 
+    background-color: map-get($colors, gray_hulk); 
     color: map-get($colors, bee);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -301,10 +301,10 @@ header {
             background-position: center;
             background-repeat: no-repeat;
             &:hover {
-            -webkit-transition: 2s;
-            transition: 2s;                
-            -webkit-transform: scale(1.5);                
-                    transform: scale(1.5);  
+            -webkit-transition: 1s;
+            transition: 1s;                
+            -webkit-transform: scale(1.1);                
+                    transform: scale(1.1);  
             }
         }
         .work1{
@@ -317,13 +317,26 @@ header {
         .work3{
             background-image: map-get($icons, work);
         }
+        .opacity_work1, .opacity_work2, .opacity_work3 {
+            height: 30%;
+            width: 100%;
+            background-color: map-get($colors, black);
+            margin-top: 18vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+            font-family: 'Oleo Script';
+            font-size: 4.5vh;
+            }
+        }
     }
 }
  
 .section5 {
     height: 80vh;
     background-color: map-get($colors, bee); 
-    color: map-get($colors, greey_hulk);
+    color: map-get($colors, gray_hulk);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -358,13 +371,13 @@ header {
                 margin: 0.5% 0;
                 a {
                 text-decoration: none;
-                color: map-get($colors, greey_hulk);              
+                color: map-get($colors, gray_hulk);              
                 }
                 &:hover {
-                -webkit-transform: scale(1.5);
-                        transform: scale(1.5);
-                -webkit-transition: 2s;
-                transition: 2s;                
+                -webkit-transform: scale(1.2);
+                        transform: scale(1.2);
+                -webkit-transition: 1s;
+                transition: 1s;                
                 }
             }
             .download {
@@ -400,7 +413,7 @@ header {
 
 footer {
     height: 5vh;
-    background-color: map-get($colors, greey_hulk);
+    background-color: map-get($colors, gray_hulk);
     color: map-get($colors, bee);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -427,7 +440,7 @@ footer {
     header {
         color: map-get($colors, bee);
         background-image: none;
-        background-color: map-get($colors, greey_hulk);
+        background-color: map-get($colors, gray_hulk);
     }
     .spark {
     height:35vh;
