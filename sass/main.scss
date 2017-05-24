@@ -12,20 +12,13 @@ nav {
         display: inline-block;
         margin: 0 5vh;
         a {
-            display: none;
             text-decoration: none;
             font-weight: bold;
             font-size: 2.5vh;
             color: map-get($colors, dark);
             }
-        .black_label {
-            height: 1vh;
-            width: 10vw;
-            background-color: map-get($colors, dark);
-            }
         }
     }
-    
 } 
 
 header {
@@ -33,7 +26,7 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 95vh;
     color: map-get($colors, bee); 
     display: -webkit-box; 
     display: -ms-flexbox; 
