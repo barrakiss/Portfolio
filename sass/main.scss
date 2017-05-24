@@ -1,8 +1,8 @@
 @import 'all';
 
 nav {
-    height: 10vh;
-    background-color: black;
+    height: 5vh;
+    background-color: map-get($colors, bee);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,9 +10,18 @@ nav {
     ul {
         li {
         display: inline-block;
+        margin: 0 5vh;
         a {
+            display: none;
             text-decoration: none;
-            color: map-get($colors, bee);
+            font-weight: bold;
+            font-size: 2.5vh;
+            color: map-get($colors, dark);
+            }
+        .black_label {
+            height: 1vh;
+            width: 10vw;
+            background-color: map-get($colors, dark);
             }
         }
     }
