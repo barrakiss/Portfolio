@@ -1,11 +1,30 @@
 @import 'all';
 
+nav {
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    ul {
+        li {
+        display: inline-block;
+        a {
+            text-decoration: none;
+            color: map-get($colors, bee);
+            }
+        }
+    }
+    
+} 
+
 header {
     background-image: map-get($icons, horizontal);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 90vh;
     color: map-get($colors, bee); 
     display: -webkit-box; 
     display: -ms-flexbox; 
@@ -432,7 +451,7 @@ footer {
     -ms-flex-pack: distribute;
         justify-content: space-around;
 }
-.hide {
+.hide { 
     display: none;
     }
 

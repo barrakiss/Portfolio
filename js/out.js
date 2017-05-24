@@ -132,6 +132,22 @@ $(window).scroll(function () {
      }
 });
 
+/*var button = document.querySelector(".manieczki");
+var changeLangEng = document.querySelectorAll(".eng");
+var changeLangPl = document.querySelectorAll(".pl");
+
+function switchLang() {
+    for (var i = 0; i < changeLangEng.length; i++) {
+    changeLangEng[i].classList.toggle("showPl");
+    changeLangEng[i].classList.toggle("showEng");      
+    } 
+    for (var i = 0; i < changeLangPl.length; i++) {
+    changeLangPl[i].classList.toggle("showPl");
+    }
+}
+
+button.addEventListener("click", switchLang);*/
+
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
