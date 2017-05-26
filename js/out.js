@@ -132,6 +132,23 @@ $(window).scroll(function () {
      }
 });
 
+$(".arrow").hide();
+$(".nav_items_mobile").hide();
+
+$(".hamburger").click(function () {
+     $(".nav_items_mobile").slideToggle("slow", function () {
+          $(".hamburger").hide();
+          $(".arrow").show();
+     });
+});
+
+$(".arrow").click(function () {
+     $(".nav_items_mobile").slideToggle("slow", function () {
+          $(".arrow").hide();
+          $(".hamburger").show();
+     });
+});
+
 /*var button = document.querySelector(".manieczki");
 var changeLangEng = document.querySelectorAll(".eng");
 var changeLangPl = document.querySelectorAll(".pl");

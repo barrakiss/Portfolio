@@ -6,18 +6,77 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
+    overflow: hidden;
     ul {
         li {
         display: inline-block;
-        margin: 0 5vh;
+        margin: 0 5vw;
         a {
+            font-family: 'Oleo Script';            
             text-decoration: none;
             font-weight: bold;
-            font-size: 2.5vh;
-            color: map-get($colors, dark);
+            font-size: 2vh;
+            color: map-get($colors, gray_hulk);
             }
         }
+    }
+    .nav_items_mobile {
+            position: absolute;                        
+            margin-top: 14vh;
+            display: block;
+            li {
+                display: block;
+                text-align: center;                
+                a {
+                font-size: 3vh; 
+                color: map-get($colors, bee);
+                }
+            }
+        }
+    .hamburger, .arrow {
+        font-weight: bold;
+        font-size: 3vh;
+        color: map-get($colors, gray_hulk);        
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin: 0 2vw 0 0;
+        display: none;
+    }
+    .arrow{
+            transform: rotate(-90deg);
+        }
+
+    #nav_button {
+        font-size: 1.5vh;
+        width: 2em;
+        height: 1em;
+        position: relative;
+        border: black;
+        background-color: map-get($colors, gray_hulk);
+        a{
+            font-family: 'Ubuntu';            
+            text-decoration: none;
+            color: map-get($colors, bee);
+        }
+    }
+    #nav_button:before {
+        content: '';
+        position: absolute;
+        top: 1em;
+        left: 0;
+        border-top: 0.7em solid map-get($colors, gray_hulk);
+        border-left: 1em solid transparent;
+        border-right: 1em solid transparent;
+    }
+    #nav_button:after {
+	    content: '';
+	    position: absolute;
+	    bottom: 1em;
+	    left: 0; 
+	    border-bottom: 0.7em solid map-get($colors, gray_hulk);
+	    border-left: 1em solid transparent;
+	    border-right: 1em solid transparent;
     }
 } 
 
@@ -26,7 +85,7 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 95vh;
     color: map-get($colors, bee); 
     display: -webkit-box; 
     display: -ms-flexbox; 
@@ -341,7 +400,7 @@ header {
         .opacity_work1, .opacity_work2, .opacity_work3 {
             height: 30%;
             width: 100%;
-            background-color: map-get($colors, dark);
+            background-color: map-get($colors, opacity_hulk);
             margin-top: 18vh;
             display: flex;
             justify-content: center;
@@ -456,12 +515,37 @@ footer {
 .hide { 
     display: none;
     }
+@media screen and (max-width: 900px) {
+    
+    nav {
+        height: 5vh;
+        .nav_items {
+            li {
+                margin: 0 2vh;
+            }
+        }
+    }
 
-@media screen and (max-width: 767px) {
     header {
+        height: 95vh;
+    }
+}
+@media screen and (max-width: 767px) {
+
+    nav{
+        .nav_items {
+            display: none;
+        }
+        .hamburger {
+            display: block;
+        }
+        
+    }
+    header {
+        z-index: 2;
         color: map-get($colors, bee);
         background-image: none;
-        background-color: map-get($colors, gray_hulk);
+        background-color: map-get($colors, dark);
     }
     .spark {
     height:35vh;
