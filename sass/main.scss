@@ -177,6 +177,7 @@ header {
                 flex-direction: column;
         h1 {
             height: 7vh;
+            font-size: 3vw;
         }
         p {
             font-family: 'Ubuntu';
@@ -235,6 +236,7 @@ header {
         width: 45vw;
         height: 70vh;
         h1 {
+        font-size: 3vw;
         text-align: center;
         height: 9vh;
         }
@@ -281,6 +283,9 @@ header {
     color: map-get($colors, gray_hulk);
     .technology_div {
         height: 9vh;
+    }
+    h1{
+        font-size: 3vw;
     }
     .technology_logo{
         height: 18vh;
@@ -363,6 +368,9 @@ header {
             align-items: center;
     .my_work {
         height: 9vh;
+    }
+    h1 {
+        font-size: 3vw;
     }
     .my_work_div {
         height: 40vh;
@@ -472,6 +480,9 @@ header {
                 -webkit-transition: 1s;
                 transition: 1s;                
                 }
+            }
+            h1 {
+                font-size: 3vw;
             }
             .download {
                     margin: 2vh 0;
